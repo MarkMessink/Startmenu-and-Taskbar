@@ -14,7 +14,7 @@ DesktopApplicationID = Get-StartApps
 	xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" 
 	xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
 	xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout">
-  <LayoutOptions StartTileGroupCellWidth="6" StartTileGroupsColumnCount="2" />
+  <LayoutOptions StartTileGroupCellWidth="6" />
   <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="6">
