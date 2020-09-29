@@ -1,6 +1,6 @@
 <!-- Standaard Startmenu layout
 
-Mark Messink 25-09-2020 / Versie 5
+Mark Messink 25-09-2020 / Versie 6
  
 Export layout = Export-StartLayout -path C:\startmenu.xml
 Info: https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout
