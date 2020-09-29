@@ -1,6 +1,6 @@
 <!-- Standaard Startmenu layout
 
-Mark Messink 25-09-2020 / 2
+Mark Messink 25-09-2020 / Versie 5
  
 Export layout = Export-StartLayout -path C:\startmenu.xml
 Info: https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout
@@ -9,13 +9,12 @@ Info: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/custom
 DesktopApplicationID = Get-StartApps
 -->
 
-
 <LayoutModificationTemplate 
 	xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" 
 	xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" 
 	xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
 	xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout">
-  <LayoutOptions StartTileGroupCellWidth="6" />
+  <LayoutOptions StartTileGroupCellWidth="6" StartTileGroupsColumnCount="2" />
   <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="6">
@@ -40,7 +39,7 @@ DesktopApplicationID = Get-StartApps
         
 		<start:Group Name="Applicaties">
 							  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
-							  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+							  <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
 		</start:Group>
 		
         <start:Group Name="Support">
