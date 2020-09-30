@@ -1,6 +1,6 @@
 <!-- Standaard Startmenu layout
 
-Mark Messink 25-09-2020 / Versie 6
+Mark Messink 30-09-2020 / Versie 1
  
 Export layout = Export-StartLayout -path C:\startmenu.xml
 Info: https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout
@@ -39,7 +39,7 @@ DesktopApplicationID = Get-StartApps
         
 		<start:Group Name="Applicaties">
 							  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
-							  <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+<!--						  <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" /> -->
 		</start:Group>
 		
         <start:Group Name="Support">
