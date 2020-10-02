@@ -26,10 +26,14 @@ DesktopApplicationID = Get-StartApps
 		
 			<start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationID="com.squirrel.Teams.Teams" />
 			<start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="Microsoft.Office.POWERPNT.EXE.15" />
-			<start:DesktopApplicationTile Size="2x2" Column="4" Row="2" DesktopApplicationID="Microsoft.SkyDrive.Desktop" />
+							  <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim" />
 			
-							  <start:Tile Size="2x2" Column="0" Row="4" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim" />
-							  <start:Tile Size="2x2" Column="2" Row="4" AppUserModelID="Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub" />			
+							  <start:Tile Size="1x1" Column="0" Row="4" AppUserModelID="Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub" />			
+							  <start:Tile Size="1x1" Column="1" Row="4" AppUserModelID="Microsoft.OfficeLens_8wekyb3d8bbwe!App" />
+			<start:DesktopApplicationTile Size="1x1" Column="2" Row="4" DesktopApplicationID="Microsoft.SkyDrive.Desktop" />
+			<start:DesktopApplicationTile Size="1x1" Column="3" Row="4" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe" />
+			<start:DesktopApplicationTile Size="1x1" Column="4" Row="4" DesktopApplicationID="https://delve.office.com" />
+			<start:DesktopApplicationTile Size="1x1" Column="5" Row="4" DesktopApplicationID="https://myaccount.microsoft.com/" />					  
         </start:Group>
 		
         <start:Group Name="Internet Browsers">
@@ -37,13 +41,13 @@ DesktopApplicationID = Get-StartApps
 			<start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.InternetExplorer.Default" />
         </start:Group>
         
-		<start:Group Name="Applicaties">
-							  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
-<!--						  <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" /> -->
+		<start:Group Name="Applicatie Stores">
+							  <start:Tile Size="1x1" Column="0" Row="0" AppUserModelID="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
+<!--						  <start:Tile Size="1x1" Column="1" Row="0" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" /> -->
 		</start:Group>
 		
         <start:Group Name="Support">
-			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\quickassist.exe" />
+			<start:DesktopApplicationTile Size="1x1" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\quickassist.exe" />
         </start:Group>
 		
       </defaultlayout:StartLayout>
