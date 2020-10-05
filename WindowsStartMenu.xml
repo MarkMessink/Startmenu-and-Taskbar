@@ -32,7 +32,7 @@ DesktopApplicationID = Get-StartApps
 							  <start:Tile Size="1x1" Column="1" Row="4" AppUserModelID="Microsoft.OfficeLens_8wekyb3d8bbwe!App" />
 			<start:DesktopApplicationTile Size="1x1" Column="2" Row="4" DesktopApplicationID="Microsoft.SkyDrive.Desktop" />
 			<start:DesktopApplicationTile Size="1x1" Column="3" Row="4" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe" />
-			<start:DesktopApplicationTile Size="1x1" Column="4" Row="4" DesktopApplicationID="https://delve.office.com" />
+			<start:DesktopApplicationTile Size="1x1" Column="4" Row="4" DesktopApplicationID="https://delve.office.com/" />
 			<start:DesktopApplicationTile Size="1x1" Column="5" Row="4" DesktopApplicationID="https://myaccount.microsoft.com/" />					  
         </start:Group>
 		
