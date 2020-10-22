@@ -1,8 +1,9 @@
 <!-- Standaard Startmenu layout
 
-Mark Messink 30-09-2020 / Versie 1
- 
-Export layout = Export-StartLayout -path C:\startmenu.xml
+Mark Messink 22-10-2020 / Version 1
+
+Export layout = Export-StartLayout -path C:\startmenu.xml 
+Export layout = Export-StartLayout -UseDesktopApplicationID -path C:\startmenu.xml
 Info: https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout
 Info: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout
 
@@ -10,30 +11,55 @@ DesktopApplicationID = Get-StartApps
 -->
 
 <LayoutModificationTemplate 
-	xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" 
-	xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" 
 	xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-	xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout">
-  <LayoutOptions StartTileGroupCellWidth="6" />
+	xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" 
+	xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" 
+	xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+	Version="1">
+  <LayoutOptions 
+  StartTileGroupCellWidth="8"
+  StartTileGroupsColumnCount="2"
+  FullScreenStart="false" />
   <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
     <StartLayoutCollection>
-      <defaultlayout:StartLayout GroupCellWidth="6">
+      <defaultlayout:StartLayout GroupCellWidth="8">
 
 		<start:Group Name="Microsoft Office 365 Suite">
 			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="Microsoft.Office.OUTLOOK.EXE.15" />
 			<start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.Office.WINWORD.EXE.15" />
 			<start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationID="Microsoft.Office.EXCEL.EXE.15" />
-		
-			<start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationID="com.squirrel.Teams.Teams" />
-			<start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="Microsoft.Office.POWERPNT.EXE.15" />
-							  <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim" />
+			<start:DesktopApplicationTile Size="2x2" Column="6" Row="0" DesktopApplicationID="Microsoft.Office.POWERPNT.EXE.15" />
 			
-							  <start:Tile Size="1x1" Column="0" Row="4" AppUserModelID="Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub" />			
-							  <start:Tile Size="1x1" Column="1" Row="4" AppUserModelID="Microsoft.OfficeLens_8wekyb3d8bbwe!App" />
-			<start:DesktopApplicationTile Size="1x1" Column="2" Row="4" DesktopApplicationID="Microsoft.SkyDrive.Desktop" />
-			<start:DesktopApplicationTile Size="1x1" Column="3" Row="4" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe" />
-			<start:DesktopApplicationTile Size="1x1" Column="4" Row="4" DesktopApplicationID="https://delve.office.com/" />
-			<start:DesktopApplicationTile Size="1x1" Column="5" Row="4" DesktopApplicationID="https://myaccount.microsoft.com/" />					  
+			
+			<start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationID="com.squirrel.Teams.Teams" />
+							  <start:Tile Size="2x2" Column="2" Row="2" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim" />
+							  <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.OfficeLens_8wekyb3d8bbwe!App" />
+							  <start:Tile Size="2x2" Column="6" Row="2" AppUserModelID="Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub" />			
+							  
+			<start:DesktopApplicationTile Size="2x2" Column="0" Row="4" DesktopApplicationID="Microsoft.SkyDrive.Desktop" />
+			<start:DesktopApplicationTile Size="2x2" Column="2" Row="4" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe" />
+					 <start:SecondaryTile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+						TileID="MSDelve" 
+						Arguments="https://Delve.Office.com" 
+						DisplayName="Microsoft Delve" 
+						Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png" 
+						Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png" 
+						ShowNameOnSquare150x150Logo="true"
+						ShowNameOnWide310x150Logo="true"
+						BackgroundColor="#BC1948"
+						ForegroundText="light"
+					 />	
+					 <start:SecondaryTile Size="2x2" Column="6" Row="4" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+						TileID="MyAccount" 
+						Arguments="https://myaccount.microsoft.com/" 
+						DisplayName="Mijn Account" 
+						Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png" 
+						Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png" 
+						ShowNameOnSquare150x150Logo="true"
+						ShowNameOnWide310x150Logo="true"
+						BackgroundColor="#2D89EF"
+						ForegroundText="light"
+					 />	
         </start:Group>
 		
         <start:Group Name="Internet Browsers">
@@ -49,10 +75,11 @@ DesktopApplicationID = Get-StartApps
         <start:Group Name="Support">
 			<start:DesktopApplicationTile Size="1x1" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\quickassist.exe" />
         </start:Group>
-		
+				
       </defaultlayout:StartLayout>
     </StartLayoutCollection>
   </DefaultLayoutOverride>
+  
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
@@ -64,4 +91,5 @@ DesktopApplicationID = Get-StartApps
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
+  
 </LayoutModificationTemplate>
