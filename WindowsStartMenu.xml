@@ -1,6 +1,6 @@
 <!-- Standaard Startmenu layout
 
-Mark Messink 22-10-2020 / Version 1
+Mark Messink 24-11-2020 / Version 1
 
 Export layout = Export-StartLayout -path C:\startmenu.xml 
 Export layout = Export-StartLayout -UseDesktopApplicationID -path C:\startmenu.xml
@@ -63,7 +63,7 @@ DesktopApplicationID = Get-StartApps
         </start:Group>
 		
         <start:Group Name="Internet Browsers">
-			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="MSEdge" />
+			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
 			<start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.InternetExplorer.Default" />
         </start:Group>
         
@@ -84,7 +84,7 @@ DesktopApplicationID = Get-StartApps
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
 		<taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
-		<taskbar:DesktopApp DesktopApplicationID="MSEdge" />
+		<taskbar:DesktopApp DesktopApplicationID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
 		<taskbar:UWA AppUserModelID="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
 		<taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.OUTLOOK.EXE.15" />
 		<taskbar:DesktopApp DesktopApplicationID="com.squirrel.Teams.Teams" />
