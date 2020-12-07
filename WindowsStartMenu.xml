@@ -63,7 +63,7 @@ DesktopApplicationID = Get-StartApps
         </start:Group>
 		
         <start:Group Name="Internet Browsers">
-			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="MSEdge" />
 	   <!-- <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.InternetExplorer.Default" /> -->
         </start:Group>
         
