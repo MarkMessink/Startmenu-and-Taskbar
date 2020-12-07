@@ -1,6 +1,6 @@
 <!-- Standaard Startmenu layout
 
-Mark Messink 24-11-2020 / Version 1
+Mark Messink 07-12-2020 / Version 1
 
 Export layout = Export-StartLayout -path C:\startmenu.xml 
 Export layout = Export-StartLayout -UseDesktopApplicationID -path C:\startmenu.xml
@@ -64,7 +64,7 @@ DesktopApplicationID = Get-StartApps
 		
         <start:Group Name="Internet Browsers">
 			<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-			<start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.InternetExplorer.Default" />
+	   <!-- <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.InternetExplorer.Default" /> -->
         </start:Group>
         
 		<start:Group Name="Applicatie Stores">
